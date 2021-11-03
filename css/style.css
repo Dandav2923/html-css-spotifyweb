@@ -9,6 +9,18 @@ html {
     font-family:'Montserrat', sans-serif;
 }
 
+.sfondo-nero {
+    background-color: black;
+}
+
+.reset {
+    list-style-type: none;
+}
+
+.padding-sinistra {
+    padding-left: 1em;
+}
+
 .width-100 {
     width: 100%;
 }
@@ -27,6 +39,14 @@ html {
 
 .width-10 {
     width: 10%;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
 }
 
 .flex {
@@ -57,7 +77,6 @@ html {
      padding: 1em;
  }
 
-
 .upgrade {
     position: absolute;
     top: 1.5em;
@@ -76,4 +95,3 @@ html {
     text-decoration: none;
     color: white;
 }
-
