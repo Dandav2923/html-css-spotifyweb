@@ -31,7 +31,7 @@ html {
 }
 
 .width-80 {
-    width: 80%;
+   min-width: 80%;
 }
 
 .width-70 {
@@ -43,7 +43,7 @@ html {
 }
 
 .width-20 {
-    width: 20%;
+    min-width: 20%;
 }
 
 .width-10 {
@@ -54,24 +54,8 @@ html {
     height: calc(100vh - 100px);
 }
 
-.centratura-verticale-testo {
-    vertical-align: middle;
-}
-
-.block {
-    display: block;
-}
-
 .inline-block {
     display: inline-block;
-}
-
-.flex {
-    display: flex;
-}
-
-.colonna {
-    flex-direction: column;
 }
 
 .clearfix::after {
@@ -86,6 +70,7 @@ html {
 
 .upgrade {
     position: absolute;
+    z-index: 99;
     top: 1.5em;
     right: 0.5em;
     border: 0;
@@ -104,5 +89,6 @@ html {
 
 .contenitore-player-musicale {
     height: 100px;
+    position: fixed;
     background-color: grey;
 }
