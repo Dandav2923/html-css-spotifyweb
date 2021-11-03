@@ -8,3 +8,19 @@ html {
     font-size: 100%;
     font-family:'Montserrat', sans-serif;
 }
+
+.width-100 {
+    width: 100%;
+}
+
+.width-10 {
+    width: 10%;
+}
+
+.contenitore-logo-pulsante {
+    background-color: black;
+}
+
+ .contenitore-logo-pulsante .contenitore-logo img {
+     width: 100%;
+ }
