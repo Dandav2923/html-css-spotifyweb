@@ -19,8 +19,30 @@ html {
 
 .contenitore-logo-pulsante {
     background-color: black;
+    position: relative;
 }
 
  .contenitore-logo-pulsante .contenitore-logo img {
      width: 100%;
+     padding: 1em;
  }
+
+
+.upgrade {
+    position: absolute;
+    top: 1.5em;
+    right: 0.5em;
+    border: 0;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 25px;
+}
+
+.upgrade a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
