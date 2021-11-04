@@ -120,7 +120,6 @@ html {
 
 .box-brani {
     overflow: auto;
-
 }
 
 .contenitore-pulsante {
@@ -139,12 +138,25 @@ html {
 }
 .contenitore-alto {
     height: calc(100vh - 200px);
-    max-width: 50em;
+    /* max-width: 50em; */
     overflow: hidden;
 }
 
-.contenitore-basso {
-    background-color: white;
+.contenitore-logo {
+    height: 10%;
+    min-height: 60px;
+}
+.contenitore-pulsanti-pagina {
+    height: 15%;
+    min-height: 100px;
+}
+.reset li a {
+    color:grey;
+    cursor: pointer;
+}
+
+.reset li a img {
+    color:rgb(128, 128, 128);
 }
 
 .contenitore-lista-playlist {
@@ -152,19 +164,8 @@ html {
     min-height: 400px;
     height: 75%;
 }
-
 .contenitore-lista-playlist h2 {
     color: white;
-}
-
-.contenitore-pulsanti-pagina {
-    height: 15%;
-    min-height: 100px;
-}
-
-.contenitore-logo {
-    height: 10%;
-    min-height: 60px;
 }
 
 .playlist {
@@ -173,15 +174,6 @@ html {
 
 .playlist .reset li {
     margin: 1em 0;
-}
-
-.reset li a {
-    color:grey;
-    cursor: pointer;
-}
-
-.reset li a img {
-    color:rgb(128, 128, 128);
 }
 
 .contenitore-aggiungi-playlist {
@@ -195,6 +187,10 @@ html {
 
 .bottone-aggungi {
     font-size: 2.5em;
+}
+
+.contenitore-basso {
+    background-color: white;
 }
 
 @media screen and (max-width: 600px) {
