@@ -147,11 +147,11 @@ html {
 
 .contenitore-lista-playlist {
     overflow: hidden;
-    height: 50%;
+    height: 75%;
 }
 
 .contenitore-pulsanti-pagina {
-    height: 30%;
+    height: 15%;
     overflow: hidden;
 }
 
@@ -171,6 +171,19 @@ html {
 
 .reset li a img {
     color:rgb(128, 128, 128);
+}
+
+.contenitore-aggiungi-playlist {
+    margin: 0.5em 0;
+}
+
+.contenitore-aggiungi-playlist a {
+    color: grey;
+    margin-right: 0.5em;
+}
+
+.bottone-aggungi {
+    font-size: 2.5em;
 }
 
 @media screen and (max-width: 600px) {
