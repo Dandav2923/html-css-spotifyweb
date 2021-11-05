@@ -19,7 +19,7 @@ h2 , h3 {
 }
 
 .sfondo-bluscuro {
-    background-color: #252850;
+    background-color: #141922;
 }
 
 .reset {
@@ -97,6 +97,10 @@ h2 , h3 {
     float: left;
 }
 
+.bordi-arrotondati {
+    border-radius: 50%;
+}
+
 .upgrade {
     z-index: 99;
     border: 0;
@@ -112,11 +116,6 @@ h2 , h3 {
     color:grey;
 }
 
-.contenitore-player-musicale {
-    width: 100%;
-    height: 100px;
-    background-color: grey;
-}
 
 .contenitore-menu {
     width: 300px;
@@ -149,8 +148,9 @@ h2 , h3 {
 }
 
 .box-brani {
-    margin-top: calc(100px + 1em);
     justify-content: center;
+    margin-top: calc(100px + 1em);
+    
 }
 
 .menu-di-navigazione .reset li a {
@@ -174,7 +174,7 @@ h2 , h3 {
 }
 
 .contenitore-alto {
-   min-height: 500px;  
+    min-height: 500px;  
 }
 
 .contenitore-logo-grande {
@@ -249,6 +249,27 @@ h2 , h3 {
     margin-right: 0.5em;
 }
 
+.contenitore-player-musicale {
+    height: 100px;
+    background-color: #282828;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenitore-brano-riproduzione {
+    height: 80%;
+    
+}
+
+.contenitore-brano-riproduzione span {
+    vertical-align: middle;
+}
+
+
+
+
+
+
 @media screen and (max-width: 600px) {
     .contenitore-menu {
         width: 5em;
@@ -293,7 +314,7 @@ h2 , h3 {
 
 @media screen and (max-width: 1100px) {
 
-    .contenitore-brani {
+    .contenitore-brani, .menu-di-navigazione ul {
         flex-wrap: wrap;
     }
 
@@ -302,3 +323,13 @@ h2 , h3 {
     }
 }
 
+@media screen and (max-width: 700px) {
+
+    .contenitore-brani, .menu-di-navigazione ul {
+        flex-wrap: wrap;
+    }
+
+    .box-brano {
+        width: calc(100% /2);
+    }
+}
