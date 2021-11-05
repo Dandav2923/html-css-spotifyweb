@@ -19,19 +19,52 @@
     <main class="contenitore-main clearfix height-100vh">
             <section class="contenitore-menu height-100 float-sinistra sfondo-nero padding flex colonna">
                 <div class="contenitore-alto width-100">
-                    <div class="contenitore-logo width-70">
+                    <div class="contenitore-logo-grande width-70">
                         <img src="img/logo.svg" alt="">
                     </div> 
+                    <div class="contenitore-logo-piccolo width-70">
+                        <img src="img/logo-small.svg" alt="">
+                    </div>
                      <div class="contenitore-pulsanti-pagina">
                         <ul class="reset">
-                            <li><a class="height-100 inline-block width-10 testo-centrato" href="#"><img  src="img/home.svg" alt=""></a>
-                                <a class="inline-block testo-centrato reset-link" href="#">Home</a>
+                            <li class="logo-pulsante-grande">
+                                <a class="height-100 inline-block width-10 testo-centrato" href="#">
+                                    <img src="img/home.svg" alt="">
+                                </a>
+                                <a class="elemento-testo inline-block testo-centrato reset-link" href="#">
+                                    Home
+                                </a>
                             </li>
-                            <li><a class="height-100 inline-block width-10 testo-centrato" href="#"><img src="img/libreria.svg" alt=""></a>
-                                <a class="inline-block testo-centrato reset-link" href="#">La mia libreria</a>
+                            <li class="logo-pulsante width-70">
+                                <a href="#">
+                                    <img src="img/home.svg" alt="">
+                                </a>
                             </li>
-                            <li><a class="height-100 inline-block width-10 testo-centrato" href="#"><img src="img/search.svg" alt=""></a>
-                                <a class="inline-block testo-centrato reset-link" href="#">Cerca</a>
+                            <li class="logo-pulsante-grande">
+                                <a class="height-100 inline-block width-10 testo-centrato" href="#">
+                                    <img src="img/libreria.svg" alt="">
+                                </a>
+                                <a class="elemento-testo inline-block testo-centrato reset-link" href="#">
+                                    La mia libreria
+                                </a>
+                            </li>
+                            <li class="logo-pulsante width-70">
+                                <a href="#">
+                                    <img src="img/libreria.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="logo-pulsante-grande">
+                                <a class="height-100 inline-block width-10 testo-centrato" href="#">
+                                    <img src="img/search.svg" alt="">
+                                </a>
+                                <a class="elemento-testo inline-block testo-centrato reset-link" href="#">
+                                    Cerca
+                                </a>
+                            </li>
+                            <li class="logo-pulsante width-70">
+                                <a href="#">
+                                    <img src="img/search.svg" alt="">
+                                </a>
                             </li>
                         </ul>
                      </div>
@@ -65,7 +98,7 @@
                         <span>
                             <i class="fas fa-arrow-circle-down"></i>
                         </span>
-                        <span>
+                        <span class="testo-none">
                             Installa app
                         </span>
                     </div>
@@ -73,14 +106,14 @@
                         <span>
                             <i class="fas fa-user-circle"></i>
                         </span>
-                        <span>
+                        <span class="testo-none">
                             john Doe 
                         </span>
                     </div>
                 </div>
             </section>
 
-            <section class="contenitore-main-brani height-100 float-sinistra sfondo-bluscuro">
+            <section class="contenitore-main-brani height-100 float-sinistra sfondo-bluscuro padding">
                 <div class="contenitore-pulsante padding flex">
                     <div class="contenitore-upgrade flex">
                         <button class="upgrade">
@@ -88,13 +121,103 @@
                         </button>
                     </div>
                 </div>
-                <div class="box-brani">
+                <div class="box-brani flex">
+                    <div class="menu-di-navigazione flex">
+                        <ul class="reset flex">
+                            <li>
+                                <a class="reset-link" href="">In evidenza</a>
+                            </li>
+                            <li><a class="reset-link" href="">Podcast</a>
+                            </li>
+                            <li><a class="reset-link" href="">Classifiche</a>
+                            </li>
+                            <li><a class="reset-link" href="">Generi e Mood</a>
+                            </li>
+                            <li><a class="reset-link" href="">Nuove Uscite</a>
+                            </li>
+                            <li><a class="reset-link" href="">Scopri</a></li>
+                        </ul>
+                    </div>
                 </div>
+                <div class="contenitore-testo-brani">
+                    <h2>
+                        Recently played
+                    </h2>
+                </div>
+                <div class="contenitore-brani width-100 flex">
+                    <div class="box-brano width-1-6">
+                        <img class="width-100" src="img/metal_lifting.jpg" alt="">
+                        <div class="titolo-brano">
+                            <h3>
+                                Heavy Metal
+                            </h3>
+                            <span>
+                                Subtitle
+                             </span>
+                        </div>
+                    </div>
+                    <div class="box-brano">
+                        <img src="img/metal_lifting.jpg" alt="">
+                        <div class="titolo-brano">
+                            <h3>
+                                Heavy Metal
+                            </h3>
+                            <span>
+                                Subtitle
+                            </span>
+                        </div>
+                    </div>
+                    <div class="box-brano">
+                        <img src="img/metal_lifting.jpg" alt="">
+                        <div class="titolo-brano">
+                            <h3>
+                                Heavy Metal
+                            </h3>
+                            <span>
+                                Subtitle
+                            </span>
+                        </div>
+                    </div>
+                    <div class="box-brano">
+                        <img src="img/metal_lifting.jpg" alt="">
+                        <div class="titolo-brano">
+                            <h3>
+                                Heavy Metal
+                            </h3>
+                            <span>
+                                Subtitle
+                            </span>
+                        </div>
+                    </div>
+                    <div class="box-brano">
+                        <img src="img/metal_lifting.jpg" alt="">
+                        <div class="titolo-brano">
+                            <h3>
+                                Heavy Metal
+                            </h3>
+                            <span>
+                                Subtitle
+                            </span>
+                        </div>
+                    </div>
+                    <div class="box-brano">
+                        <img src="img/metal_lifting.jpg" alt="">
+                        <div class="titolo-brano">
+                            <h3>
+                                Heavy Metal
+                            </h3>
+                            <span>
+                                Subtitle
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
             </section>
         </main>
         <footer> 
             <div class="contenitore-player-musicale">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus alias veritatis vitae magni suscipit sunt, eius dolore doloremque quia omnis nostrum eligendi libero. Corporis neque recusandae temporibus quam voluptate.
+                
             </div>
     </footer>
 </body>
