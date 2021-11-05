@@ -361,6 +361,7 @@ h2 , h3 {
 }
 
 .barra-di-riproduzione {
+    position: relative;
     background-color: grey;
     height: 10px;
     margin: 0 1em;
@@ -378,6 +379,21 @@ h2 , h3 {
     align-self: center;
 }
 
+.cursore-brano {
+    display: none;
+    position: absolute;
+    top: -1px;
+    left: 50px;
+    color: black;
+    cursor: pointer;
+    font-size: 10px;
+
+}
+
+.barra-di-riproduzione:hover .cursore-brano {
+    display: block;
+}
+
 .contenitore-volume {
     align-items: center;
     width: 300px;
@@ -388,8 +404,9 @@ h2 , h3 {
 }
 
 .barra-di-volume {
+    position: relative;
     background-color: grey;
-    height: 10px;
+    height: 16px;
     margin: 0 1em;
     width: 200px;
     border-radius: 5px;
@@ -398,12 +415,32 @@ h2 , h3 {
 
 .barra-di-volume span {
     display: inline-block;
-    height: 10px;
+    height: 16px;
     width: 60px;
     border-radius: 5px;
     background-color:lime;
     align-self: center;
 }
+
+.cursore-volume {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 4.7em;
+    color: black;
+    cursor: pointer;
+
+}
+
+.barra-di-volume:hover .cursore-volume {
+    display: block;
+}
+/* .barra-di-volume span:after {
+    content: '\25CF';
+    height: 13px;
+    width: 13px;
+    color: black;
+} */
 
     
 @media screen and (max-width: 600px) {
