@@ -10,6 +10,10 @@ html {
     color: grey
 }
 
+footer {
+    overflow: hidden;
+}
+
 h2 , h3 {
     color: white;
 }
@@ -32,6 +36,10 @@ h2 , h3 {
 
 .padding {
     padding: 1em;
+}
+
+.padding-sinistra {
+    padding: 0 0 0 1em;
 }
 
 .width-100 {
@@ -60,7 +68,6 @@ h2 , h3 {
 
 .width-1-6 {
     width: calc(100% / 6);
-
 }
 
 .height-100vh {
@@ -101,6 +108,7 @@ h2 , h3 {
     border-radius: 50%;
 }
 
+
 .upgrade {
     z-index: 99;
     border: 0;
@@ -108,6 +116,10 @@ h2 , h3 {
     border: 1px solid grey;
     border-radius: 25px;
     background-color: transparent;
+}
+
+.upgrade:hover {
+    transform: scale(1.2);
 }
 
 .upgrade a {
@@ -149,12 +161,27 @@ h2 , h3 {
 
 .box-brani {
     justify-content: center;
-    margin-top: calc(100px + 1em);
-    
+    margin-top: calc(100px + 1em);   
 }
 
 .menu-di-navigazione .reset li a {
     padding: 1em;
+    text-transform: uppercase;
+}
+
+.menu-di-navigazione li .barra-verde {
+    display: none;
+}
+
+.menu-di-navigazione li:hover .barra-verde {
+    display: block;
+    width: 40px;
+    border: 1px solid lime;
+    margin: 0 auto;
+}
+
+.menu-di-navigazione .reset li a:hover {
+    color: white;
 }
 
 .contenitore-testo-brani {
@@ -169,6 +196,10 @@ h2 , h3 {
     padding: 0.5em;
 }
 
+.trasparenza {
+    color: rgba(0, 0, 0, 0.5);
+}
+
 .titolo-brano {
     text-align: center;
 }
@@ -179,6 +210,7 @@ h2 , h3 {
 
 .contenitore-logo-grande {
     margin-bottom: 1em;
+    padding: 1em;
 }
 
 .contenitore-logo-piccolo {
@@ -187,6 +219,19 @@ h2 , h3 {
 
 .contenitore-pulsanti-pagina {
     margin-bottom: 1em;
+}
+
+.contenitore-pulsanti-pagina li a:hover {
+    color: white;
+}
+
+
+.bordo-verde {
+    border-left: 3px solid lime;
+}
+
+.bordo-nero {
+    border-left: 3px solid black;
 }
 
 .logo-pulsante {
@@ -200,6 +245,7 @@ h2 , h3 {
 
 .contenitore-lista-playlist {
     overflow: hidden;
+    padding: 0 0 0 1em;
 }
 .contenitore-lista-playlist h2 {
     color: white;
@@ -214,6 +260,10 @@ h2 , h3 {
     margin: 1em 0;
 }
 
+.playlist .reset li a:hover {
+    color: white;
+}
+
 .contenitore-aggiungi-playlist {
     margin: 0.5em 0;
 }
@@ -223,12 +273,17 @@ h2 , h3 {
     margin-right: 0.5em;
 }
 
+.contenitore-aggiungi-playlist a:hover {
+    color: white;
+}
+
 .bottone-aggungi {
     font-size: 2.5em;
 }
 
 .contenitore-basso {
     height: 100px;
+    padding: 0 0 0 1em;
     background-color:black;
 }
 
@@ -257,6 +312,10 @@ h2 , h3 {
 
 .contenitore-brano-riproduzione {
     align-items: center;  
+}
+
+.contenitore-brano-riproduzione img {
+    min-width: 50px;
 }
 
 .cotenitore-mini-player {
@@ -304,14 +363,12 @@ h2 , h3 {
 }
 
 .contenitore-volume {
-    /* min-width: 15em; */
     align-items: center;
 }
 
 .contenitore-volume div span {
     padding: 0 0.4em;
 }
-
 
 .barra-di-volume {
     background-color: grey;
@@ -331,19 +388,11 @@ h2 , h3 {
     align-self: center;
 }
 
-footer {
-    overflow: hidden;
-}
     
-
-
-
-
-
-
 @media screen and (max-width: 600px) {
     .contenitore-menu {
         width: 5em;
+        padding: 1em;
     }
 
     .contenitore-main-brani {
