@@ -253,16 +253,23 @@ h2 , h3 {
     height: 100px;
     background-color: #282828;
     justify-content: space-between;
-    align-items: center;
 }
 
 .contenitore-brano-riproduzione {
-    height: 80%;
-    
+    align-items: center;  
 }
 
-.contenitore-brano-riproduzione span {
-    vertical-align: middle;
+.cotenitore-mini-player {
+    margin-left: 1em;
+    font-size: 0.9em;
+}
+
+.contenitore-cta {
+    margin-left: 2.5em;
+}
+
+.contenitore-cta span {
+    margin: 0 0.5em;
 }
 
 
@@ -277,7 +284,7 @@ h2 , h3 {
 
     .contenitore-main-brani {
         width: calc(100% - 5em);
-        background-color:#252850;
+        background-color:#141922;
     }
 
     .contenitore-pulsante {
