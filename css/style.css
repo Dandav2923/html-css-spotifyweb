@@ -146,6 +146,14 @@ html {
    min-height: 500px;  
 }
 
+.contenitore-logo {
+    margin-bottom: 1em;
+}
+
+.contenitore-pulsanti-pagina {
+    margin-bottom: 1em;
+}
+
 .reset li a {
     color:grey;
     cursor: pointer;
@@ -183,6 +191,23 @@ html {
 .contenitore-basso {
     height: 100px;
     background-color:black;
+}
+
+.contenitore-installa-app {
+    padding: 1em 0;
+    border-bottom: 2px solid grey;
+}
+
+.contenitore-installa-app span {
+    margin-right: 0.5em;
+}
+
+.contenitore-profilo {
+    padding: 1em 0;
+}
+
+.contenitore-profilo span {
+    margin-right: 0.5em;
 }
 
 @media screen and (max-width: 600px) {
