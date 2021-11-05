@@ -194,13 +194,28 @@ h2 , h3 {
 
 .box-brano {
     padding: 0.5em;
+    position: relative;
 }
 
-.trasparenza {
-    color: rgba(0, 0, 0, 0.5);
+.contenitore-bottone-play {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 75%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    justify-content: center; 
+    align-items: center;
+    font-size: 4em;
 }
+
+.box-brano:hover .contenitore-bottone-play  {
+    display: flex;
+}
+
 
 .titolo-brano {
+    margin-top: 1em;
     text-align: center;
 }
 
@@ -311,7 +326,8 @@ h2 , h3 {
 }
 
 .contenitore-brano-riproduzione {
-    align-items: center;  
+    align-items: center; 
+    width: 300px; 
 }
 
 .contenitore-brano-riproduzione img {
@@ -364,6 +380,7 @@ h2 , h3 {
 
 .contenitore-volume {
     align-items: center;
+    width: 300px;
 }
 
 .contenitore-volume div span {
