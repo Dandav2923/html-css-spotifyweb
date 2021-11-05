@@ -256,7 +256,8 @@ h2 , h3 {
 }
 
 .contenitore-brano-riproduzione {
-    align-items: center;  
+    align-items: center; 
+    min-width: 20em 
 }
 
 .cotenitore-mini-player {
@@ -270,7 +271,71 @@ h2 , h3 {
 
 .contenitore-cta span {
     margin: 0 0.5em;
+    cursor: pointer;
 }
+
+.contenitore-pulsanti-riproduzione {
+    min-width: 50em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contenitore-pulsanti-riproduzione
+.box-pulsanti-riproduzione span {
+    margin:  0 1.5em;
+    cursor: pointer;
+}
+
+.barra-di-riproduzione {
+    background-color: grey;
+    height: 10px;
+    margin: 0 1em;
+    width: 360px;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.barra-di-riproduzione span {
+    display: inline-block;
+    height: 10px;
+    width: 60px;
+    border-radius: 5px;
+    background-color:lime;
+    align-self: center;
+}
+
+.contenitore-volume {
+    /* min-width: 15em; */
+    align-items: center;
+}
+
+.contenitore-volume div span {
+    padding: 0 0.4em;
+}
+
+
+.barra-di-volume {
+    background-color: grey;
+    height: 10px;
+    margin: 0 1em;
+    width: 200px;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.barra-di-volume span {
+    display: inline-block;
+    height: 10px;
+    width: 60px;
+    border-radius: 5px;
+    background-color:lime;
+    align-self: center;
+}
+
+footer {
+    overflow: hidden;
+}
+    
 
 
 
